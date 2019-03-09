@@ -1,0 +1,23 @@
+.Navbar {
+    display: inline-block;
+
+}
+
+.navbar_item {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2F4F4F;
+    font-weight: bold;
+    padding: 18px 1em;
+    margin: 0 -1px;
+}
+
+.navbar_item:hover {
+    border-bottom: 4px solid #1E90FF;
+    color: #677979;
+}
+
+.is_active {
+    border-bottom: 4px solid #1E90FF;
+    color: #677979;
+}

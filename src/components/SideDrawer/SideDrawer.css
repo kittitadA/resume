@@ -1,0 +1,45 @@
+.SideDrawer {
+    width: 280px;
+    height: 100%;
+    max-width: 80%;
+    padding: 32px 16px;
+    top: 0;
+    left: 0;
+    position:  fixed;
+    z-index: 200;
+    background-color: white;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+.Navbars {
+    height: 50%;
+    margin-top: 30%;
+    padding-left: 5%;
+    flex-flow: column;
+    display: flex;
+    list-style: none;
+}
+
+.Navbars li {
+    margin: 20px;
+    padding: 0px;
+}
+
+.Navbars a{
+    padding: 10px 10px;
+}
+
+@media (min-width: 500px) {
+    .SideDrawer {
+      display: none;
+    }
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
+}

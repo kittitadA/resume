@@ -1,0 +1,53 @@
+.Footer {
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+    padding: 10px;
+    color: white;
+    background-color: #393e46;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.Content {
+    width: 270px;
+    height: 163px;
+    margin: 20px 40px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.Icon_img {
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  filter: invert(80%);
+  margin: 5px;
+}
+
+.Icon_img:hover {
+  filter: invert(100%);
+}
+
+
+.Copyright {
+    color: white;
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding: 13px 0px;
+    background-color: #222831;
+}
+
+@media (max-width: 500px) {
+    .Content {
+        padding: 0px;
+        margin: 5px;
+        padding: 2px;
+    }
+}

@@ -1,0 +1,12 @@
+.Navbars {
+    height: 50%;
+    margin-right: 3%;
+    list-style: none;
+    float: right;
+}
+
+@media (max-width: 530px) {
+    .Navbars {
+        display: none;
+    }
+}

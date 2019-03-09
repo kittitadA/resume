@@ -1,0 +1,33 @@
+.Content {
+    width: 520px;
+    margin: 5% 0px;
+    display: block;
+    box-sizing: border-box;
+    animation-name: contentMove;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+h1 {
+  color: salmon;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .Content {
+      width: 100%;
+      margin: 25% 0px;
+  }
+}
+
+@keyframes contentMove {
+    0% {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

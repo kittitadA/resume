@@ -1,0 +1,106 @@
+.Layout {
+    height: 125px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.Year {
+    width: 100px;
+    margin-left: 27%;
+    margin-top: 2em;
+    float: left;
+    animation-name: LeftMove;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.Content {
+    width: 215px;
+    height: 90px;
+    margin-top: 2em;
+    margin-left: 45%;
+    text-align: left;
+    position: absolute;
+    animation-name: RightMove;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.Content h3 {
+    margin-bottom: 0;
+}
+
+.Content p {
+    margin-top: 0.5em;
+}
+
+.Line {
+    width: 3px;
+    height: 21%;
+    text-align: center;
+    margin-left: 35%;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: salmon;
+}
+
+.Line div {
+    width: 20px;
+    height: 20px;
+    margin-left: -8px;
+    margin-top: 58px;
+    border-radius: 50%;
+    background-color: salmon;
+    position: absolute;
+}
+
+@keyframes LeftMove {
+    0% {
+        opacity: 0;
+        transform: translateX(-1em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes RightMove {
+    0% {
+        opacity: 0;
+        transform: translateX(1em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+  .Year {
+    width: 50px;
+    margin-left: 3%;
+    margin-top: 8%;
+  }
+
+  .Line {
+    height: 18%;
+    margin-left: 30%;
+  }
+
+  .Line div {
+      margin-left: -8px;
+      margin-top: 50px;
+  }
+
+  .Content {
+      width: 100px;
+      margin-top: 6%;
+  }
+
+  .Content h3 {
+      margin: 0 0 4px;
+  }
+}

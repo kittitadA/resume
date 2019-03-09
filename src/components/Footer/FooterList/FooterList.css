@@ -1,0 +1,18 @@
+.Content {
+    width: 270px;
+    height: 163px;
+    margin: 20px 40px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+@media (max-width: 500px) {
+    .Content {
+        padding: 0px;
+        margin: 5px;
+        padding: 2px;
+    }
+}

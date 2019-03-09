@@ -1,0 +1,44 @@
+.Content {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    animation-name: contentMove;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.Card_skill_ul {
+    margin: 3% 0 0;
+    padding: 0px;
+    text-align: center;
+    display: block;
+}
+
+.Card_skill_li {
+    display: inline-block;
+    margin: 2em 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .Content {
+      width: 100%;
+      margin: 25% 0px;
+  }
+
+  .Card_skill_li {
+      display: inline-block;
+      margin: 1em 0;
+  }
+}
+
+@keyframes contentMove {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
