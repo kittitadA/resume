@@ -16,11 +16,11 @@ const sideDrawer = (props) => {
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')} onClick={props.closed}>
                 <ul className={classes.Navbars}>
-                    <Navbar exact link="/">Home</Navbar>
-                    <Navbar link="/About">About</Navbar>
-                    <Navbar link="/Skill">Skill</Navbar>
-                    <Navbar link="/Education">Education</Navbar>
-                    <Navbar link="/Contact">Contact</Navbar>
+                    <Navbar exact link="/resume">Home</Navbar>
+                    <Navbar link="/resume/About">About</Navbar>
+                    <Navbar link="/resume/Skill">Skill</Navbar>
+                    <Navbar link="/resume/Education">Education</Navbar>
+                    <Navbar link="/resume/Contact">Contact</Navbar>
                 </ul>
             </div>
         </Aux>
